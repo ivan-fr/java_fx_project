@@ -20,6 +20,12 @@ java_fx_project/
 
 ## How to Run
 
+**Option 1: Single command (recommended)**
+```bash
+export JAVA_HOME=/opt/homebrew/opt/openjdk@21 && mvn clean javafx:run
+```
+
+**Option 2: Step by step**
 1. Set JAVA_HOME to Java 21:
    ```bash
    export JAVA_HOME=/opt/homebrew/opt/openjdk@21
@@ -29,6 +35,8 @@ java_fx_project/
    ```bash
    mvn clean javafx:run
    ```
+
+**Note:** You must set JAVA_HOME to Java 21 before running Maven, otherwise you'll get a "invalid target release: 21" error.
 
 ## What it does
 
